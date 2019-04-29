@@ -55,7 +55,7 @@ to: <%= h.mgnPomLocation(h, locals) %>/pom.xml
           <dependency>
             <groupId>io.github.watertao</groupId>
             <artifactId>veigar-mbg-plugin</artifactId>
-            <version>2.1.1</version>
+            <version>2.2.0-SNAPSHOT</version>
           </dependency>
         </dependencies>
       </plugin>
