@@ -1,0 +1,32 @@
+自动生成基于 veigar 的简单权限认证管理模块。
+
+# 如何使用
+
+请先安装 nodejs (npm)
+
+[source, bash]
+----
+mkdir workdir && cd workdir
+npm i -g hygen
+npm i -g hygen-add
+hygen-add https://github.com/watertao/hygen-veigar-simple-auth
+wget https://raw.githubusercontent.com/watertao/hygen-veigar-simple-auth/master/.hygen.js
+hygen veigar-simple-auth gen
+----
+
+
+根据提示输入参数，最后会在 workdir 下生成 maven 模块。
+
+----
+└── testapp-authority
+    ├── pom.xml
+    ├── testapp-authority-authentication-db
+    │   ├── pom.xml
+    │   └── src
+    ├── testapp-authority-mgn
+    │   ├── pom.xml
+    │   └── src
+    └── testapp-authority-session
+        ├── pom.xml
+        └── src
+----
