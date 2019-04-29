@@ -16,7 +16,7 @@ to: <%= h.mainPomLocation(h, locals) %>/pom.xml
     <java.version>1.8</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
-    <veigar.version>2.1.1</veigar.version>
+    <veigar.version>2.2.0-SNAPSHOT</veigar.version>
     <commonsLang3.version>3.8.1</commonsLang3.version>
     <commonsCodec.version>1.11</commonsCodec.version>
 <% if(database == 'yes'){ -%>
