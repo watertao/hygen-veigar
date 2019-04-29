@@ -1,0 +1,32 @@
+自动生成基于 veigar 的简单应用。
+
+# 如何使用
+
+请先安装 nodejs (npm)
+
+[source, bash]
+----
+mkdir workdir && cd workdir
+npm i -g hygen
+npm i -g hygen-add
+hygen-add https://github.com/watertao/hygen-veigar-app
+wget https://raw.githubusercontent.com/watertao/hygen-veigar-app/master/.hygen.js
+hygen veigar-app gen
+----
+
+
+根据提示输入参数，最后会在 workdir 下生成 maven 模块。
+
+----
+testapp
+├── mgb
+│   └── generatorConfig.xml
+├── pom.xml
+└── src
+    └── main
+        ├── java
+        │   └── com
+        │       └── mycompany
+        └── resources
+            └── application.properties
+----
